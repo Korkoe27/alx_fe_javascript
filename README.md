@@ -1,10 +1,13 @@
 # Dynamic Quote Generator Project
 
 ## Overview
+
 This project, part of the ALX Frontend Developer Program, focuses on building a **Dynamic Quote Generator** web application to master advanced JavaScript concepts, including DOM manipulation, web storage, JSON data handling, and server synchronization. The application allows users to generate, manage, filter, and sync quotes across sessions, providing hands-on experience with dynamic and persistent web development.
 
 ## Goal for the Week
+
 Develop a robust web application that demonstrates proficiency in:
+
 - Advanced DOM manipulation for dynamic content creation.
 - Web storage (local and session storage) for data persistence.
 - JSON data import/export for state management.
@@ -12,6 +15,7 @@ Develop a robust web application that demonstrates proficiency in:
 - Simulated server synchronization with conflict resolution.
 
 ## Tasks for the Week
+
 1. **Building a Dynamic Content Generator with Advanced DOM Manipulation**  
    - Create a "Dynamic Quote Generator" that displays random quotes based on categories.
    - Implement functions (`showRandomQuote`, `createAddQuoteForm`, `addQuote`) to generate and add quotes dynamically.
@@ -33,11 +37,14 @@ Develop a robust web application that demonstrates proficiency in:
    - Add UI notifications for sync updates and manual conflict resolution options.
 
 ## Repository
+
 - **GitHub Repository**: alx_fe_javascript
 - **Directory**: dom-manipulation
 
 ## Learning Objectives
+
 By completing this project, you will:
+
 - Master advanced DOM manipulation for creating interactive web pages.
 - Understand and implement web storage (local and session storage) for data persistence.
 - Handle JSON data for importing/exporting application state.
