@@ -40,19 +40,12 @@ const quotes = [
     }   
 
 
-    function addQuote() {
-        const newQuoteText = document.getElementById('newQuoteText').value;
-        const newQuoteCategory = document.getElementById('newQuoteCategory').value;
-
-        if (newQuoteText && newQuoteCategory) {
-            quotes.push({
-                text: newQuoteText,
-                category: newQuoteCategory
-            });
-            showRandomQuote();
-            document.getElementById('newQuoteText').value = '';
-            document.getElementById('newQuoteCategory').value = '';
-        } else {
-            alert("Please enter both quote text and category.");
-        }
+ function createAddQuoteForm() {
+        const formContainer = document.createElement('div');
+        formContainer.innerHTML = `
+            <input id="newQuoteText" type="text" placeholder="Enter a new quote" />
+            <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
+            <button onclick="addQuote()">Add Quote</button>
+        `;
+        document.body.appendChild(formContainer);
     }
