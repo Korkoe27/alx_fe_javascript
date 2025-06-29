@@ -38,4 +38,21 @@ const quotes = [
         
         quoteDisplay.innerHTML = `<p>${randomQuote.text}</p><p><em>Category: ${randomQuote.category}</em></p>`;
     }   
-// }
+
+
+    function addQuote() {
+        const newQuoteText = document.getElementById('newQuoteText').value;
+        const newQuoteCategory = document.getElementById('newQuoteCategory').value;
+
+        if (newQuoteText && newQuoteCategory) {
+            quotes.push({
+                text: newQuoteText,
+                category: newQuoteCategory
+            });
+            showRandomQuote();
+            document.getElementById('newQuoteText').value = '';
+            document.getElementById('newQuoteCategory').value = '';
+        } else {
+            alert("Please enter both quote text and category.");
+        }
+    }
