@@ -1,7 +1,6 @@
 
 
-
-let qoutes = [
+const quotes = [
 
         {
             "text":"The greatest glory in living lies not in never falling, but in rising every time we fall.",
@@ -27,6 +26,16 @@ let qoutes = [
     ]
 
 
-function showRandomQuote(){
+    
+    
+    
+    function showRandomQuote()
+    {
 
-}
+        const quoteDisplay = document.getElementById('quoteDisplay');
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        const randomQuote = quotes[randomIndex];
+        
+        quoteDisplay.innerHTML = `<p>${randomQuote.text}</p><p><em>Category: ${randomQuote.category}</em></p>`;
+    }   
+// }
